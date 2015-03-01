@@ -14,7 +14,7 @@ public class Controller : MonoBehaviour
 	private GameObject ballClone;
 	public GameObject deadZone;
 	public Rigidbody ballRigidbody;
-	public float ballspeed = 5000f;
+	public float ballspeed = 4000f;
 	public static Controller instance;
 
 
