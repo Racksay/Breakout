@@ -7,77 +7,61 @@ public class GameManager : MonoBehaviour {
 	public int life = 3;
 	public int blocks = 100;
 	public int score = 0;
-	public float resetDeleay = 1f;
+	public int restartDelay = 3;
 	public Text livesText;
 	public Text scoreText;
 	public GameObject gameOver;
 	public GameObject youWon;
 	public GameObject bricksPrefab;
 	public GameObject paddle;
+	private GameObject clonePaddle;
 	public GameObject deathParticles;
-	public static GameManager instance = null;
-
+	public static GameManager instance;
 	public Rigidbody ballRigidbody;
 
 
-
-	private GameObject clonePaddle;
-	
-	
-	
 	// Use this for initialization
 	void Start () {
-		if (instance == null)
-			instance = this;
-		else if (instance != this)
-			Destroy (gameObject);
-		
-		
+		instance = this;
 		Setup ();
 	}
 	public void Setup(){
 		clonePaddle = Instantiate (paddle, transform.position, Quaternion.identity) as GameObject;
 	}
+	void Restart(){
+		Application.LoadLevel (1);
+	}
 	
-	void CheckGameOver(){
-		if (blocks < 1) {
+	void WinOrLoseCheck(){
+		if (blocks <= 0) {
 			youWon.SetActive(true);
-			Invoke("Reset", resetDeleay);
+			Invoke("Restart", restartDelay);
 		}
-		if (life < 1) {
+		if (life <= 0) {
 			gameOver.SetActive(true);
-			Invoke("Reset", resetDeleay);
+			Invoke("Restart", restartDelay);
 		}
 	}
-	void Reset(){
-		Application.LoadLevel (Application.loadedLevel);
-	}
+
 	
 	public void LoseLife(){
 		life--;
 		livesText.text = "Lives: " + life;
-		Instantiate (deathParticles, clonePaddle.transform.position, Quaternion.identity);
 		Destroy (clonePaddle);
-		Invoke ("SetupPaddle", resetDeleay);
-		CheckGameOver ();
+		Controller.instance.DestroyBall ();
+		Invoke ("SetupPaddle", 1);
+		WinOrLoseCheck ();
 	}
 	
 	void SetupPaddle(){
 		clonePaddle = Instantiate (paddle, transform.position, Quaternion.identity) as GameObject;
 	}
 	
-	public void DestroyBrick(){
+	public void OnBlockDestroyed(){
 		blocks--;
-		score++;
+		score++; 
 		scoreText.text = "Score: " + score;
-		CheckGameOver ();
+		WinOrLoseCheck ();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-		
-
-	}
-
 }
