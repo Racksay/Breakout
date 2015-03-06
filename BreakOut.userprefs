@@ -1,6 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../untitled folder/Assets/scripts/Controller.cs">
+    <Files>
+      <File FileName="../untitled folder/Assets/scripts/HalfTheSize.cs" Line="1" Column="1" />
+      <File FileName="../untitled folder/Assets/scripts/Bricks.cs" Line="25" Column="18" />
+      <File FileName="../untitled folder/Assets/scripts/Controller.cs" Line="64" Column="2" />
+      <File FileName="../untitled folder/Assets/scripts/DeadZone.cs" Line="1" Column="1" />
+      <File FileName="../untitled folder/Assets/scripts/GameManager.cs" Line="18" Column="35" />
+      <File FileName="../untitled folder/Assets/scripts/LoadOnClick.cs" Line="1" Column="1" />
+      <File FileName="../untitled folder/Assets/scripts/Pause.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
