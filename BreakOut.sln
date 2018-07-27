@@ -1,11 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{26AE7496-4466-3C64-9950-CD240B55236F}") = "Breakout", "Assembly-CSharp.csproj", "{1B91EFDE-9B25-2316-2D71-6E972A83EF85}"
-EndProject
-Project("{26AE7496-4466-3C64-9950-CD240B55236F}") = "Breakout", "Assembly-UnityScript-firstpass.unityproj", "{EB7BE593-2F46-C6D3-C7C2-2B1E23A394CC}"
-EndProject
-Project("{26AE7496-4466-3C64-9950-CD240B55236F}") = "Breakout", "Assembly-UnityScript.unityproj", "{96C2D24B-AB57-ABC3-3531-7C8FDF7FCF86}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Breakout", "Assembly-CSharp.csproj", "{1B91EFDE-9B25-2316-2D71-6E972A83EF85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +13,6 @@ Global
 		{1B91EFDE-9B25-2316-2D71-6E972A83EF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B91EFDE-9B25-2316-2D71-6E972A83EF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B91EFDE-9B25-2316-2D71-6E972A83EF85}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB7BE593-2F46-C6D3-C7C2-2B1E23A394CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB7BE593-2F46-C6D3-C7C2-2B1E23A394CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB7BE593-2F46-C6D3-C7C2-2B1E23A394CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB7BE593-2F46-C6D3-C7C2-2B1E23A394CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96C2D24B-AB57-ABC3-3531-7C8FDF7FCF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96C2D24B-AB57-ABC3-3531-7C8FDF7FCF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96C2D24B-AB57-ABC3-3531-7C8FDF7FCF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96C2D24B-AB57-ABC3-3531-7C8FDF7FCF86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +35,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal

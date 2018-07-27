@@ -37,7 +37,7 @@ public class Controller : MonoBehaviour
 					}
 				}
 			if (attachedBall) {
-				ballRigidbody = attachedBall.rigidbody;
+				ballRigidbody = attachedBall.GetComponent<Rigidbody>();
 				ballRigidbody.position = transform.position + new Vector3 (0f, 5.5f, 0f);
 
 			if (Input.GetButtonDown ("Jump")) {
@@ -59,9 +59,9 @@ public class Controller : MonoBehaviour
 
 	void OnCollisionEnter(Collision col){
 		foreach(ContactPoint contact in  col.contacts){
-			if(contact.thisCollider == collider){
+			if(contact.thisCollider == GetComponent<Collider>()){
 				float ballangle = contact.point.x - transform.position.x;
-				contact.otherCollider.rigidbody.AddForce(200*ballangle,300,0);
+				contact.otherCollider.GetComponent<Rigidbody>().AddForce(200*ballangle,300,0);
 			}
 		}
 
