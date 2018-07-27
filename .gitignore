@@ -1,5 +1,4 @@
-
-]bj/
+[Ll]iabrary/
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
@@ -33,3 +32,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.swp
+*.~un
