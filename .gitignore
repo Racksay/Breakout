@@ -37,8 +37,7 @@ sysinfo.txt
 ty generated #
 # =============== #
 [Tt]emp/
-[Oo]bj/
-[Bb]uild
+[Oo]bjBb]uild
 /[Bb]uilds/
 /[Ll]ibrary/
 sysinfo.txt
@@ -46,6 +45,10 @@ sysinfo.txt
 /Assets/AssetStoreTools*
 *.apk
 *.unitypackage
+_Resharper.caches
+obj/
+
+
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
